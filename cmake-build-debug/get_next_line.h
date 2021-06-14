@@ -14,4 +14,5 @@ void	*ft_memcpy (void *dst, const void *src, size_t n);
 size_t ft_strlen(const char *dest);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strchr (const char *str, int ch);
+#define BUFFER_SIZE 42
 #endif //GET_NEXT_LINE_GET_NEXT_LINE_H
