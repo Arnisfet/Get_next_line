@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/mrudge/Desktop/untitled/cmake-build-debug/get_next_line.c
+fcntl.h
+-
+unistd.h
+-
+string.h
+-
+get_next_line.h
+/Users/mrudge/Desktop/untitled/cmake-build-debug/get_next_line.h
+
+/Users/mrudge/Desktop/untitled/cmake-build-debug/get_next_line.h
+stdio.h
+-
+unistd.h
+-
+fcntl.h
+-
+stdlib.h
+-
+
