@@ -67,10 +67,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/mrudge/Desktop/untitled
+CMAKE_SOURCE_DIR = /Users/mrudge/Desktop/get_next_line
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/mrudge/Desktop/untitled/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/mrudge/Desktop/get_next_line/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -99,9 +99,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mrudge/Desktop/untitled/cmake-build-debug/CMakeFiles /Users/mrudge/Desktop/untitled/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mrudge/Desktop/get_next_line/cmake-build-debug/CMakeFiles /Users/mrudge/Desktop/get_next_line/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mrudge/Desktop/untitled/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mrudge/Desktop/get_next_line/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

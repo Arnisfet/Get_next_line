@@ -6,6 +6,31 @@
 #include <string.h>
 #include "get_next_line.h"
 
+char	*ft_strnew(size_t size)
+{
+	char *str;
+
+	str = (char *)malloc(sizeof(char) * (size + 1));
+	if (str == NULL)
+		return (NULL);
+	while (size > 0)
+		str[size--] = '\0';
+	str[0] = '\0';
+	return (str);
+}
+
+void	ft_strclr(char *s)
+{
+	if (s)
+	{
+		while (*s)
+		{
+			*s = '\0';
+			s++;
+		}
+	}
+}
+
 char	*ft_strcpy(char *dst, const char *src)
 {
 	char	*tmp;
@@ -31,10 +56,14 @@ char *check_r(char *reminder, char **line)
 			*line = ft_strdup(reminder);
 			++p_n;
 			ft_strcpy(reminder, p_n);
-		}
-		else
+		} else
+		{
 			*line = ft_strdup(reminder);
+			ft_strclr(reminder);
+		}
 	}
+	else
+		*line = ft_strnew(1);
 	return (p_n);
 }
 
@@ -61,10 +90,8 @@ int get_next_line(int fd, char **line)
 			reminder = ft_strdup(++point);
 		}
 		*line = ft_strjoin(*line, buf);
-		if (*line)
-			free(*line);
 	}
-	if (byte_was_read || ft_strlen(reminder) || ft_strlen(*line))
+	if (byte_was_read || ft_strlen(*line))
 		return (1);
 	return (0);
 }

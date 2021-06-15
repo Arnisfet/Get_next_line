@@ -8,13 +8,11 @@ int main()
 	int fd;
 
 	fd = 0;
-	fd = open("t.txt", O_RDONLY);
+	fd = open("/Users/mrudge/Desktop/Test/gnlTester/files/42_with_nl",
+			  O_RDONLY);
 	if (fd == -1)
 		puts("error");
-	get_next_line(fd, &line);
-	printf("%s\n", line);
-	get_next_line(fd, &line);
-	printf("%s\n", line);
-	get_next_line(fd, &line);
-	printf("%s\n", line);
+	while(get_next_line(fd, &line))
+		printf("%s\n", line);
+
 }
