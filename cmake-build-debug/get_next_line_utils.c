@@ -3,6 +3,7 @@
 //
 
 #include <stdlib.h>
+#include <unistd.h>
 
 size_t	ft_strlen (const char *str)
 {
@@ -71,9 +72,7 @@ char	*ft_strdup(const char *str)
 char	*ft_strchr(const char *str, int ch)
 {
 	char	*p;
-	char	i;
 
-	i = (char)ch;
 	p = (char *)str;
 	while (*p && *p != ch)
 		p++;

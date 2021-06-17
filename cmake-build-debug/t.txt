@@ -1,3 +1,1 @@
-1) A - First alphabet symbol!!!
-2) B - Second alphabet symbol!
-3) C - Third alphabet symbol
+12345

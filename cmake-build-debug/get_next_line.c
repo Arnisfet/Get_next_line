@@ -79,7 +79,7 @@ int get_next_line(int fd, char **line)
 	*line = "\0";
 	point = check_r(reminder, line);
 	byte_was_read = 1;
-	while (!point && byte_was_read)
+	while (!point && byte_was_read > 0)
 	{
 		byte_was_read  = read(fd, buf, BUFFER_SIZE);
 		buf[byte_was_read] = '\0';
@@ -91,7 +91,8 @@ int get_next_line(int fd, char **line)
 		}
 		*line = ft_strjoin(*line, buf);
 	}
-	if (byte_was_read || ft_strlen(*line))
-		return (1);
-	return (0);
+
+	if (byte_was_read == 0 && !reminder) //ft_strlen(*line))
+		return (0);
+	return (1);
 }
