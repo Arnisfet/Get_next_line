@@ -63,16 +63,16 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/mrudge/Desktop/get_next_line
+CMAKE_SOURCE_DIR = /Users/mrudge/Desktop/get_next_line_2.0.
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/mrudge/Desktop/get_next_line/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/mrudge/Desktop/get_next_line_2.0./cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/untitled.dir/all
+all: CMakeFiles/get_next_line_2_0_.dir/all
 
 .PHONY : all
 
@@ -82,36 +82,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/untitled.dir/clean
+clean: CMakeFiles/get_next_line_2_0_.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/untitled.dir
+# Target rules for target CMakeFiles/get_next_line_2_0_.dir
 
 # All Build rule for target.
-CMakeFiles/untitled.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/mrudge/Desktop/get_next_line/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4 "Built target untitled"
-.PHONY : CMakeFiles/untitled.dir/all
+CMakeFiles/get_next_line_2_0_.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/get_next_line_2_0_.dir/build.make CMakeFiles/get_next_line_2_0_.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/get_next_line_2_0_.dir/build.make CMakeFiles/get_next_line_2_0_.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/mrudge/Desktop/get_next_line_2.0./cmake-build-debug/CMakeFiles --progress-num=1,2,3,4 "Built target get_next_line_2_0_"
+.PHONY : CMakeFiles/get_next_line_2_0_.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/untitled.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mrudge/Desktop/get_next_line/cmake-build-debug/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/untitled.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mrudge/Desktop/get_next_line/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/untitled.dir/rule
+CMakeFiles/get_next_line_2_0_.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mrudge/Desktop/get_next_line_2.0./cmake-build-debug/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/get_next_line_2_0_.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mrudge/Desktop/get_next_line_2.0./cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/get_next_line_2_0_.dir/rule
 
 # Convenience name for target.
-untitled: CMakeFiles/untitled.dir/rule
+get_next_line_2_0_: CMakeFiles/get_next_line_2_0_.dir/rule
 
-.PHONY : untitled
+.PHONY : get_next_line_2_0_
 
 # clean rule for target.
-CMakeFiles/untitled.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/clean
-.PHONY : CMakeFiles/untitled.dir/clean
+CMakeFiles/get_next_line_2_0_.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/get_next_line_2_0_.dir/build.make CMakeFiles/get_next_line_2_0_.dir/clean
+.PHONY : CMakeFiles/get_next_line_2_0_.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
