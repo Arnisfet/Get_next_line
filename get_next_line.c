@@ -8,8 +8,6 @@
 // из цикла массив и его перезапись в лайн.
 // 4) Очистка созданного массива  в начале программы.
 
-
-
 //Алгоритм очистки массива
 //1) Вводится счетчик и просчитывается длина массива (while (* != '\0' ||
 // '\n'), если попался нуль терминатор, то это конец строки и проводится
@@ -25,7 +23,7 @@ char	*clear_arr(char *saved_buf)
 {
 	int		i;
 	int		j;
-	size_t	length;
+	size_t	len;
 	char	*new_buf;
 
 	i = 0;
@@ -38,8 +36,8 @@ char	*clear_arr(char *saved_buf)
 		free(saved_buf);
 		return (NULL);
 	}
-	length = ft_strlen(saved_buf) - i;
-	new_buf = malloc(sizeof(char) * (length + 1));
+	len = ft_strlen(saved_buf) - i;
+	new_buf = malloc(sizeof(char) * (len + 1));
 	if (!new_buf)
 		return (NULL);
 	i++, j = 0;
@@ -71,23 +69,25 @@ char	*str_n(char *saved_buf)
 	return (new_line);
 }
 
-char	*ft_strchr(char *s, int c)
+char	*ft_strchr (const char *str, int ch)
 {
-	int	i;
+	char	*p;
+	char	i;
 
-	i = 0;
-	while (s[i] && s[i] != (unsigned char)c)
-		i++;
-	if (s[i] == (unsigned char)c)
-		return ((char *)&s[i]);
+	i = (char)ch;
+	p = (char *)str;
+	while (*p && *p != ch)
+		p++;
+	if (*p == ch)
+		return (p);
 	return (NULL);
 }
 
-int get_next_line(int fd, char **line)
+int	get_next_line(int fd, char **line)
 {
-	static char *clean;
-	char *buf;
-	int reader;
+	static char	*clean;
+	char		*buf;
+	int			reader;
 
 	if (fd < 0 || !line || BUFFER_SIZE < 1 || read(fd, NULL, 0) < 0)
 		return (-1);
@@ -96,9 +96,8 @@ int get_next_line(int fd, char **line)
 	if (!buf)
 		return (-1);
 	reader = read(fd, buf, BUFFER_SIZE);
-	while(reader > 0)
+	while (reader > 0)
 	{
-
 		buf[reader] = '\0';
 		clean = ft_strjoin(clean, buf);
 		if (ft_strchr(clean, '\n'))

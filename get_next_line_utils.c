@@ -28,11 +28,13 @@ char	*ft_strjoin(char *s1, char *s2)
 	if (!arr)
 		return (NULL);
 	if (s1)
+	{
 		while (s1[i] != '\0')
 		{
 			arr[i] = s1[i];
 			i++;
 		}
+	}
 	if (s2)
 		while (s2[j] != '\0')
 			arr[i++] = s2[j++];
