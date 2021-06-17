@@ -8,8 +8,6 @@
 // из цикла массив и его перезапись в лайн.
 // 4) Очистка созданного массива  в начале программы.
 
-
-
 //Алгоритм очистки массива
 //1) Вводится счетчик и просчитывается длина массива (while (* != '\0' ||
 // '\n'), если попался нуль терминатор, то это конец строки и проводится
@@ -21,7 +19,7 @@
 //4) Очистка входящего массива и возврат нового.
 #include "get_next_line.h"
 
-char	*clear_arr(char *saved_buf)
+char	*clear_arr(char *memmory)
 {
 	int		i;
 	int		j;
@@ -29,57 +27,59 @@ char	*clear_arr(char *saved_buf)
 	char	*new_buf;
 
 	i = 0;
-	if (!saved_buf)
+	if (!memmory)
 		return (NULL);
-	while (saved_buf[i] && saved_buf[i] != '\n')
+	while (memmory[i] && memmory[i] != '\n')
 		i++;
-	if (saved_buf[i] == '\0')
+	if (memmory[i] == '\0')
 	{
-		free(saved_buf);
+		free(memmory);
 		return (NULL);
 	}
-	length = ft_strlen(saved_buf) - i;
+	length = ft_strlen(memmory) - i;
 	new_buf = malloc(sizeof(char) * (length + 1));
 	if (!new_buf)
 		return (NULL);
 	i++, j = 0;
-	while (saved_buf[i])
-		new_buf[j++] = saved_buf[i++];
+	while (memmory[i])
+		new_buf[j++] = memmory[i++];
 	new_buf[j] = '\0';
-	free(saved_buf);
+	free(memmory);
 	return (new_buf);
 }
 
-char	*str_n(char *saved_buf)
+char	*str_n(char *clean)
 {
 	int		i;
 	char	*new_line;
 
 	i = 0;
-	while (saved_buf && saved_buf[i] && saved_buf[i] != '\n')
+	while (clean && clean[i] && clean[i] != '\n')
 		i++;
 	new_line = malloc(sizeof(char) * (i + 1));
 	if (!new_line)
 		return (NULL);
 	i = 0;
-	while (saved_buf && saved_buf[i] && saved_buf[i] != '\n')
+	while (clean && clean[i] && clean[i] != '\n')
 	{
-		new_line[i] = saved_buf[i];
+		new_line[i] = clean[i];
 		i++;
 	}
 	new_line[i] = '\0';
 	return (new_line);
 }
 
-char	*ft_strchr(char *s, int c)
+char	*ft_strchr (const char *str, int ch)
 {
-	int	i;
+	char	*p;
+	char	i;
 
-	i = 0;
-	while (s[i] && s[i] != (unsigned char)c)
-		i++;
-	if (s[i] == (unsigned char)c)
-		return ((char *)&s[i]);
+	i = (char)ch;
+	p = (char *)str;
+	while (*p && *p != ch)
+		p++;
+	if (*p == ch)
+		return (p);
 	return (NULL);
 }
 
@@ -98,7 +98,6 @@ int get_next_line(int fd, char **line)
 	reader = read(fd, buf, BUFFER_SIZE);
 	while(reader > 0)
 	{
-
 		buf[reader] = '\0';
 		clean = ft_strjoin(clean, buf);
 		if (ft_strchr(clean, '\n'))

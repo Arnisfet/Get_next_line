@@ -62,10 +62,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/mrudge/Desktop/get_next_line_2.0.
+CMAKE_SOURCE_DIR = /Users/mrudge/Desktop/get_next_line
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/mrudge/Desktop/get_next_line_2.0./cmake-build-debug
+CMAKE_BINARY_DIR = /Users/mrudge/Desktop/get_next_line/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/get_next_line_2_0_.dir/depend.make
@@ -78,42 +78,42 @@ include CMakeFiles/get_next_line_2_0_.dir/flags.make
 
 CMakeFiles/get_next_line_2_0_.dir/main.c.o: CMakeFiles/get_next_line_2_0_.dir/flags.make
 CMakeFiles/get_next_line_2_0_.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mrudge/Desktop/get_next_line_2.0./cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/get_next_line_2_0_.dir/main.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/get_next_line_2_0_.dir/main.c.o -c /Users/mrudge/Desktop/get_next_line_2.0./main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mrudge/Desktop/get_next_line/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/get_next_line_2_0_.dir/main.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/get_next_line_2_0_.dir/main.c.o -c /Users/mrudge/Desktop/get_next_line/main.c
 
 CMakeFiles/get_next_line_2_0_.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/get_next_line_2_0_.dir/main.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mrudge/Desktop/get_next_line_2.0./main.c > CMakeFiles/get_next_line_2_0_.dir/main.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mrudge/Desktop/get_next_line/main.c > CMakeFiles/get_next_line_2_0_.dir/main.c.i
 
 CMakeFiles/get_next_line_2_0_.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/get_next_line_2_0_.dir/main.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mrudge/Desktop/get_next_line_2.0./main.c -o CMakeFiles/get_next_line_2_0_.dir/main.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mrudge/Desktop/get_next_line/main.c -o CMakeFiles/get_next_line_2_0_.dir/main.c.s
 
 CMakeFiles/get_next_line_2_0_.dir/get_next_line.c.o: CMakeFiles/get_next_line_2_0_.dir/flags.make
 CMakeFiles/get_next_line_2_0_.dir/get_next_line.c.o: get_next_line.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mrudge/Desktop/get_next_line_2.0./cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/get_next_line_2_0_.dir/get_next_line.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/get_next_line_2_0_.dir/get_next_line.c.o -c /Users/mrudge/Desktop/get_next_line_2.0./cmake-build-debug/get_next_line.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mrudge/Desktop/get_next_line/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/get_next_line_2_0_.dir/get_next_line.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/get_next_line_2_0_.dir/get_next_line.c.o -c /Users/mrudge/Desktop/get_next_line/cmake-build-debug/get_next_line.c
 
 CMakeFiles/get_next_line_2_0_.dir/get_next_line.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/get_next_line_2_0_.dir/get_next_line.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mrudge/Desktop/get_next_line_2.0./cmake-build-debug/get_next_line.c > CMakeFiles/get_next_line_2_0_.dir/get_next_line.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mrudge/Desktop/get_next_line/cmake-build-debug/get_next_line.c > CMakeFiles/get_next_line_2_0_.dir/get_next_line.c.i
 
 CMakeFiles/get_next_line_2_0_.dir/get_next_line.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/get_next_line_2_0_.dir/get_next_line.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mrudge/Desktop/get_next_line_2.0./cmake-build-debug/get_next_line.c -o CMakeFiles/get_next_line_2_0_.dir/get_next_line.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mrudge/Desktop/get_next_line/cmake-build-debug/get_next_line.c -o CMakeFiles/get_next_line_2_0_.dir/get_next_line.c.s
 
 CMakeFiles/get_next_line_2_0_.dir/get_next_line_utils.c.o: CMakeFiles/get_next_line_2_0_.dir/flags.make
 CMakeFiles/get_next_line_2_0_.dir/get_next_line_utils.c.o: get_next_line_utils.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mrudge/Desktop/get_next_line_2.0./cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/get_next_line_2_0_.dir/get_next_line_utils.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/get_next_line_2_0_.dir/get_next_line_utils.c.o -c /Users/mrudge/Desktop/get_next_line_2.0./cmake-build-debug/get_next_line_utils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mrudge/Desktop/get_next_line/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/get_next_line_2_0_.dir/get_next_line_utils.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/get_next_line_2_0_.dir/get_next_line_utils.c.o -c /Users/mrudge/Desktop/get_next_line/cmake-build-debug/get_next_line_utils.c
 
 CMakeFiles/get_next_line_2_0_.dir/get_next_line_utils.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/get_next_line_2_0_.dir/get_next_line_utils.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mrudge/Desktop/get_next_line_2.0./cmake-build-debug/get_next_line_utils.c > CMakeFiles/get_next_line_2_0_.dir/get_next_line_utils.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mrudge/Desktop/get_next_line/cmake-build-debug/get_next_line_utils.c > CMakeFiles/get_next_line_2_0_.dir/get_next_line_utils.c.i
 
 CMakeFiles/get_next_line_2_0_.dir/get_next_line_utils.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/get_next_line_2_0_.dir/get_next_line_utils.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mrudge/Desktop/get_next_line_2.0./cmake-build-debug/get_next_line_utils.c -o CMakeFiles/get_next_line_2_0_.dir/get_next_line_utils.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mrudge/Desktop/get_next_line/cmake-build-debug/get_next_line_utils.c -o CMakeFiles/get_next_line_2_0_.dir/get_next_line_utils.c.s
 
 # Object files for target get_next_line_2_0_
 get_next_line_2_0__OBJECTS = \
@@ -129,7 +129,7 @@ get_next_line_2_0_: CMakeFiles/get_next_line_2_0_.dir/get_next_line.c.o
 get_next_line_2_0_: CMakeFiles/get_next_line_2_0_.dir/get_next_line_utils.c.o
 get_next_line_2_0_: CMakeFiles/get_next_line_2_0_.dir/build.make
 get_next_line_2_0_: CMakeFiles/get_next_line_2_0_.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/mrudge/Desktop/get_next_line_2.0./cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable get_next_line_2_0_"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/mrudge/Desktop/get_next_line/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable get_next_line_2_0_"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/get_next_line_2_0_.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -142,6 +142,6 @@ CMakeFiles/get_next_line_2_0_.dir/clean:
 .PHONY : CMakeFiles/get_next_line_2_0_.dir/clean
 
 CMakeFiles/get_next_line_2_0_.dir/depend:
-	cd /Users/mrudge/Desktop/get_next_line_2.0./cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/mrudge/Desktop/get_next_line_2.0. /Users/mrudge/Desktop/get_next_line_2.0. /Users/mrudge/Desktop/get_next_line_2.0./cmake-build-debug /Users/mrudge/Desktop/get_next_line_2.0./cmake-build-debug /Users/mrudge/Desktop/get_next_line_2.0./cmake-build-debug/CMakeFiles/get_next_line_2_0_.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/mrudge/Desktop/get_next_line/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/mrudge/Desktop/get_next_line /Users/mrudge/Desktop/get_next_line /Users/mrudge/Desktop/get_next_line/cmake-build-debug /Users/mrudge/Desktop/get_next_line/cmake-build-debug /Users/mrudge/Desktop/get_next_line/cmake-build-debug/CMakeFiles/get_next_line_2_0_.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/get_next_line_2_0_.dir/depend
 

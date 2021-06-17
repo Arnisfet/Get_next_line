@@ -1,4 +1,4 @@
-
+#include <sys/fcntl.h>
 #include "./cmake-build-debug/get_next_line.h"
 
 
